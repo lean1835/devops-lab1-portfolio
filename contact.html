@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thông tin liên hệ - Lê Văn An DTC235180002">
+    <title>Liên hệ — Lê Văn An | DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 24px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 650px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 8px 18px;
+            border-radius: 12px;
+            transition: all 0.25s ease;
+        }
+        .nav-link:hover {
+            color: #667eea;
+            background: #f7fafc;
+        }
+        .nav-link.active {
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+        }
+        .avatar-wrapper {
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.25);
+            transition: transform 0.3s ease;
+        }
+        .avatar:hover {
+            transform: scale(1.06);
+        }
+        h1 { color: #2d3748; margin-bottom: 6px; font-size: 28px; font-weight: 700; }
+        h2 { color: #764ba2; margin-bottom: 20px; font-size: 16px; font-weight: 500; }
+        .contact-list {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+            border-color: #cbd5e1;
+        }
+        .contact-icon {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef2ff;
+            border-radius: 10px;
+        }
+        .contact-text strong {
+            display: block;
+            font-size: 14px;
+            color: #1e293b;
+        }
+        .contact-text span {
+            font-size: 13.5px;
+            color: #64748b;
+        }
+        .message-form {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .message-form h3 {
+            font-size: 16px;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+        .input-group {
+            margin-bottom: 12px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 4px;
+        }
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        .input-group textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+        .footer { margin-top: 24px; font-size: 13px; color: #718096; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="index.html" class="nav-link">🏠 Trang chủ</a>
+            <a href="about.html" class="nav-link">👤 Giới thiệu</a>
+            <a href="contact.html" class="nav-link active">📬 Liên hệ</a>
+        </nav>
+
+        <!-- Avatar Image -->
+        <div class="avatar-wrapper">
+            <img src="avatar.png" alt="Ảnh đại diện của Lê Văn An" class="avatar" width="120" height="120">
+        </div>
+
+        <h1>Liên Hệ &amp; Kết Nối</h1>
+        <h2>Lê Văn An — MSSV: DTC235180002</h2>
+
+        <div class="contact-list">
+            <a href="mailto:lean1835.vac@gmail.com" class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-text">
+                    <strong>Email liên hệ</strong>
+                    <span>lean1835.vac@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/lean1835" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">🐙</div>
+                <div class="contact-text">
+                    <strong>GitHub Profile</strong>
+                    <span>github.com/lean1835</span>
+                </div>
+            </a>
+
+            <a href="https://lva.id.vn/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-text">
+                    <strong>Blog &amp; Portfolio Cá nhân</strong>
+                    <span>https://lva.id.vn/</span>
+                </div>
+            </a>
+
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                    <strong>Đơn vị học tập</strong>
+                    <span>Trường Đại học Công nghệ Thông tin & Truyền thông - Đại học Thái Nguyên</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="message-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã gửi tin nhắn liên hệ!');">
+            <h3>✉️ Gửi Lời Nhắn Nhanh</h3>
+            <div class="input-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" placeholder="Nhập họ tên của bạn..." required>
+            </div>
+            <div class="input-group">
+                <label for="msg">Nội dung</label>
+                <textarea id="msg" placeholder="Nhập nội dung lời nhắn..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Gửi liên hệ</button>
+        </form>
+
+        <div class="footer">
+            <p>© 2026 Lê Văn An — DevOps Lab 1 Portfolio</p>
+        </div>
+    </div>
+</body>
+</html>
