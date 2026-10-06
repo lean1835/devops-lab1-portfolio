@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DevOps Lab 1 Portfolio - Lê Văn An DTC235180002">
-    <title>DevOps Lab 1 — My Portfolio</title>
+    <meta name="description" content="Giới thiệu bản thân - Lê Văn An DTC235180002">
+    <title>Giới thiệu — Lê Văn An | DevOps Lab 1</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -71,46 +71,55 @@
         }
         h1 { color: #2d3748; margin-bottom: 6px; font-size: 28px; font-weight: 700; }
         h2 { color: #764ba2; margin-bottom: 20px; font-size: 16px; font-weight: 500; }
-        .info {
+        .section-box {
             background: #f8fafc;
             border-radius: 12px;
             padding: 20px;
-            margin: 20px 0;
+            margin: 16px 0;
             text-align: left;
             border: 1px solid #e2e8f0;
         }
-        .info p { margin: 8px 0; font-size: 15px; color: #4a5568; }
-        .badge-container {
-            margin: 16px 0;
+        .section-box h3 {
+            font-size: 16px;
+            color: #1e3a8a;
+            margin-bottom: 10px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            align-items: center;
             gap: 8px;
         }
-        .badge {
-            background: #eef2ff;
-            color: #4f46e5;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 600;
-            border: 1px solid #c7d2fe;
-            transition: all 0.2s ease;
+        .section-box p {
+            font-size: 14.5px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 8px;
         }
-        .badge:hover {
-            background: #4f46e5;
-            color: white;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-item {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         .footer { margin-top: 24px; font-size: 13px; color: #718096; line-height: 1.6; }
-        .status { color: #10b981; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Navigation Bar -->
         <nav class="navbar" aria-label="Main Navigation">
-            <a href="index.html" class="nav-link active">🏠 Trang chủ</a>
-            <a href="about.html" class="nav-link">👤 Giới thiệu</a>
+            <a href="index.html" class="nav-link">🏠 Trang chủ</a>
+            <a href="about.html" class="nav-link active">👤 Giới thiệu</a>
             <a href="contact.html" class="nav-link">📬 Liên hệ</a>
         </nav>
 
@@ -119,37 +128,34 @@
             <img src="avatar.png" alt="Ảnh đại diện của Lê Văn An" class="avatar" width="120" height="120">
         </div>
 
-        <h1>👋 Xin chào, DevOps!</h1>
-        <h2>Lab 1 — Trải nghiệm CI/CD Pipeline Tự Động Hóa 🚀</h2>
+        <h1>Lê Văn An</h1>
+        <h2>Sinh viên Công nghệ Phần mềm — KTPMK22A (ICTU)</h2>
 
-        <div class="info">
-            <p>👨‍🎓 <strong>Họ tên:</strong> Lê Văn An (MSSV: DTC235180002)</p>
-            <p>🏫 <strong>Lớp:</strong> KTPMK22A — Khoa CNTT (ICTU)</p>
-            <p>🎯 <strong>Môn học:</strong> Vận hành & Bảo trì Phần mềm</p>
-            <p>🚀 <strong>Triển khai bởi:</strong> GitHub Actions CI/CD Pipeline</p>
-            <p>📅 <strong>Ngày deploy:</strong> <span id="date"></span></p>
-            <p>🔄 <strong>Pipeline status:</strong> <span class="status">✅ Automated &amp; Live</span></p>
+        <div class="section-box">
+            <h3>🎯 Giới Thiệu Chung</h3>
+            <p>Tôi là sinh viên chuyên ngành Kỹ thuật Phần mềm tại Trường Đại học Công nghệ Thông tin & Truyền thông (ICTU). Đam mê tìm hiểu và ứng dụng văn hóa <strong>DevOps</strong>, tự động hóa quy trình CI/CD và kiến trúc hệ thống hiện đại.</p>
         </div>
 
-        <div class="badge-container">
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub Actions</span>
-            <span class="badge">GitHub Pages</span>
-            <span class="badge">Lighthouse CI</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">DevOps</span>
+        <div class="section-box">
+            <h3>⚡ Kỹ Năng &amp; Công Nghệ</h3>
+            <div class="skills-grid">
+                <div class="skill-item"><span>🚀</span> CI/CD: GitHub Actions</div>
+                <div class="skill-item"><span>📦</span> Version Control: Git / GitHub</div>
+                <div class="skill-item"><span>🐧</span> OS: Linux &amp; Windows</div>
+                <div class="skill-item"><span>🌐</span> Frontend: HTML5 / CSS3 / React</div>
+                <div class="skill-item"><span>🐍</span> Backend: Python / Node.js</div>
+                <div class="skill-item"><span>📊</span> Quality: Lighthouse CI Audit</div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h3>🏆 Mục Tiêu Khóa Học VHBTPM</h3>
+            <p>Làm chủ toàn bộ vòng đời phát triển phần mềm theo chuẩn DevOps: từ lập kế hoạch, quản lý mã nguồn, kiểm thử tự động, triển khai liên tục đến giám sát và vận hành an toàn.</p>
         </div>
 
         <div class="footer">
-            <p>Deployed automatically via GitHub Actions Pipeline</p>
-            <p>🔄 Push code → Validate &amp; Lighthouse CI → Auto Deploy → Live! 🚀</p>
+            <p>© 2026 Lê Văn An — DevOps Lab 1 Portfolio</p>
         </div>
     </div>
-
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
-    </script>
 </body>
 </html>
